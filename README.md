@@ -18,7 +18,10 @@ The goal of this project is to understand how access to financial services diffe
 - **Dataset:** World Bank Global Findex Database
 - **Source:** World Bank
 - **Theme:** Financial inclusion, account ownership, digital payments, saving, borrowing, and financial resilience
-- **Unit of analysis:** To be confirmed after dataset inspection
+- **Rows:** 8,577
+- **Columns:** 438
+- **Years available:** 2011, 2014, 2017, 2021, 2024
+- **Unit of analysis:** Aggregated country-year-population-segment observation
 
 The raw dataset will not be committed if it is large. Local data files should be stored under `data/raw/`.
 
@@ -58,10 +61,14 @@ financial-inclusion-gap-analysis/
 ## Progress
 
 - [x] Repository initialized
-- [ ] Dataset downloaded and inspected
+- [x] Dataset downloaded and inspected
 - [ ] Data dictionary reviewed
 - [ ] Key indicators selected
 - [ ] Data cleaned and validated
 - [ ] SQL analysis completed
 - [ ] Power BI dashboard completed
 - [ ] Final findings documented
+
+## Current Progress
+
+The Global Findex 2025 CSV has been downloaded and initially inspected. The dataset appears to be aggregated at a country-year-population-segment level, not individual customer level.
