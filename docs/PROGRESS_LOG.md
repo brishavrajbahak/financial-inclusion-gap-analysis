@@ -66,3 +66,59 @@ Download the Global Findex dataset, inspect the available files, and identify th
 Review the indicator definitions and select the final indicators for the analysis.
 
 ---
+
+## Day 3 - Indicator Review and Selection
+
+**Date:** June 25, 2026
+
+### Work Completed
+
+- Continued `01_dataset_understanding.ipynb`.
+- Reviewed initial Global Findex candidate indicators.
+- Wrote plain-English meanings for key financial inclusion indicators.
+- Grouped indicators into themes such as account ownership, mobile money, digital payments, saving, borrowing, and account inactivity.
+- Checked missing values for candidate indicators.
+- Previewed Nepal rows for selected indicators.
+- Selected final context columns for the first analysis scope.
+- Selected final indicator columns for the first analysis scope.
+
+### Final Context Columns Selected
+
+- `countrynewwb`
+- `codewb`
+- `year`
+- `pop_adult`
+- `regionwb24_hi`
+- `incomegroupwb24`
+- `group`
+- `group2`
+
+### Final Indicator Columns Selected
+
+- `account_t_d`
+- `fiaccount_t_d`
+- `mobileaccount_t_d`
+- `dig_acc`
+- `merchant_pay`
+- `g20_made`
+- `g20_received`
+- `inactive_t_d`
+
+### Concepts Learned
+
+- Indicator codes need to be translated into plain-English meanings before analysis.
+- Not every available indicator should be included in the first analysis scope.
+- Borrowing and saving indicators may be useful later, but they are not central to the first dashboard.
+- Candidate indicator missingness should be checked before final cleaning.
+
+### Decisions Made
+
+- Focus the first analysis scope on account ownership, financial institution access, mobile money, digital payments, and inactive accounts.
+- Keep borrowing and saving indicators as possible future additions.
+- Start a new cleaning notebook next instead of continuing transformations inside the dataset-understanding notebook.
+
+### Next Step
+
+Start `02_data_cleaning.ipynb`, load only the selected columns, rename indicator columns into business-friendly names, check missing values, and prepare a clean analysis dataset.
+
+---

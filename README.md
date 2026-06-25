@@ -62,8 +62,8 @@ financial-inclusion-gap-analysis/
 
 - [x] Repository initialized
 - [x] Dataset downloaded and inspected
-- [ ] Data dictionary reviewed
-- [ ] Key indicators selected
+- [x] Data dictionary reviewed
+- [x] Key indicators selected
 - [ ] Data cleaned and validated
 - [ ] SQL analysis completed
 - [ ] Power BI dashboard completed
@@ -72,3 +72,5 @@ financial-inclusion-gap-analysis/
 ## Current Progress
 
 The Global Findex 2025 CSV has been downloaded and initially inspected. The dataset appears to be aggregated at a country-year-population-segment level, not individual customer level.
+
+Initial indicator review is complete. The first analysis scope will focus on account ownership, financial institution access, mobile money, digital payments, and inactive accounts.
