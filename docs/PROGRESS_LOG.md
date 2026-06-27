@@ -122,3 +122,31 @@ Review the indicator definitions and select the final indicators for the analysi
 Start `02_data_cleaning.ipynb`, load only the selected columns, rename indicator columns into business-friendly names, check missing values, and prepare a clean analysis dataset.
 
 ---
+
+## Day 4 - Initial Data Cleaning and Validation
+
+**Date:** June 27, 2026
+
+### Work Completed
+
+- Created `02_data_cleaning.ipynb`.
+- Loaded only the 16 selected context and indicator columns.
+- Renamed coded columns into business-friendly analytical names.
+- Profiled missing values overall and by survey year.
+- Validated the proposed composite key using country code, year, group, and subgroup.
+- Confirmed that the composite key contains no missing values or duplicate rows.
+- Confirmed that all non-missing indicator values fall between 0 and 1.
+- Reviewed categorical values and investigated the additional 2022 survey year.
+- Confirmed that 2022 contains data for 16 countries and retained it as a legitimate off-cycle survey period.
+
+### Decisions Made
+
+- Keep indicator values as decimal proportions for downstream SQL and Power BI formatting.
+- Do not remove rows or fill missing indicators until their year and segment availability is fully understood.
+- Keep the 2022 observations and document their limited country coverage.
+
+### Next Step
+
+Document the final cleaning rules, create the analysis-ready dataset, and validate the processed output before export.
+
+---
