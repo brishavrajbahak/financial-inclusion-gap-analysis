@@ -150,3 +150,40 @@ Start `02_data_cleaning.ipynb`, load only the selected columns, rename indicator
 Document the final cleaning rules, create the analysis-ready dataset, and validate the processed output before export.
 
 ---
+
+## Day 5 - Final Cleaning and Processed Dataset Export
+
+**Date:** June 28, 2026
+
+### Work Completed
+
+- Identified 12 regional, income-group, and global benchmark entities.
+- Added `entity_type` to separate country rows from aggregate benchmark rows.
+- Added `survey_period_type` to label the limited 2022 observations as an off-cycle survey.
+- Standardized text fields by removing leading and trailing spaces.
+- Documented why missing indicator values must remain null rather than being replaced with zero.
+- Created an ordered analysis-ready table with 8,577 rows and 18 columns.
+- Exported the reproducible processed dataset to `data/processed/findex_analysis_ready.csv`.
+- Reloaded the exported CSV and confirmed its shape matches the cleaned DataFrame.
+
+### Validation Results
+
+- Missing composite-key values: 0.
+- Duplicate composite keys: 0.
+- Indicator values outside the valid 0-to-1 range: 0.
+- Country rows: 7,893.
+- Aggregate benchmark rows: 684.
+- Off-cycle 2022 rows: 176.
+
+### Decisions Made
+
+- Retain aggregate benchmark rows for Nepal comparisons, but distinguish them from countries using `entity_type`.
+- Retain the 2022 observations and label them as off-cycle survey data.
+- Preserve missing indicator values as null because unavailable data is not equivalent to zero usage.
+- Keep processed data out of GitHub because it is reproducible from the cleaning notebook.
+
+### Next Step
+
+Begin SQL analysis using the processed dataset and validate the main financial-inclusion comparisons before dashboard development.
+
+---

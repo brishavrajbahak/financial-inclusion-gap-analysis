@@ -20,10 +20,11 @@ The goal of this project is to understand how access to financial services diffe
 - **Theme:** Financial inclusion, account ownership, digital payments, saving, borrowing, and financial resilience
 - **Rows:** 8,577
 - **Columns:** 438
-- **Years available:** 2011, 2014, 2017, 2021, 2024
+- **Years available:** 2011, 2014, 2017, 2021, 2022, 2024
+- **Survey-period note:** 2022 is an off-cycle survey period covering 16 countries
 - **Unit of analysis:** Aggregated country-year-population-segment observation
 
-The raw dataset will not be committed if it is large. Local data files should be stored under `data/raw/`.
+Raw and processed data files are kept local and excluded from GitHub. The processed dataset can be reproduced by running the cleaning notebook.
 
 ## Initial Business Questions
 
@@ -64,13 +65,13 @@ financial-inclusion-gap-analysis/
 - [x] Dataset downloaded and inspected
 - [x] Data dictionary reviewed
 - [x] Key indicators selected
-- [ ] Data cleaned and validated
+- [x] Data cleaned and validated
 - [ ] SQL analysis completed
 - [ ] Power BI dashboard completed
 - [ ] Final findings documented
 
 ## Current Progress
 
-The Global Findex 2025 CSV has been downloaded and initially inspected. The dataset appears to be aggregated at a country-year-population-segment level, not individual customer level.
+Dataset understanding, indicator selection, and cleaning are complete. The analysis-ready dataset contains 8,577 rows and 18 columns covering account ownership, financial institution access, mobile money, digital payments, and inactive accounts.
 
-Initial indicator review is complete. The first analysis scope will focus on account ownership, financial institution access, mobile money, digital payments, and inactive accounts.
+Country observations are separated from regional, income-group, and global aggregates. Missing indicators remain null because availability differs by survey year and population segment. The next phase is SQL analysis and validation.
