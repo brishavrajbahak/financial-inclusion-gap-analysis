@@ -72,6 +72,8 @@ financial-inclusion-gap-analysis/
 
 ## Current Progress
 
-Dataset understanding, indicator selection, and cleaning are complete. The analysis-ready dataset contains 8,577 rows and 18 columns covering account ownership, financial institution access, mobile money, digital payments, and inactive accounts.
+Dataset understanding, indicator selection, cleaning, and initial SQL setup are complete. The analysis-ready dataset contains 8,577 rows and 18 columns covering account ownership, financial institution access, mobile money, digital payments, and inactive accounts.
 
-Country observations are separated from regional, income-group, and global aggregates. Missing indicators remain null because availability differs by survey year and population segment. The next phase is SQL analysis and validation.
+Country observations are separated from regional, income-group, and global aggregates. Missing indicators remain null because availability differs by survey year and population segment.
+
+The SQL phase has started in `03_sql_analysis.ipynb` using SQLite. The processed CSV has been loaded into a local database, initial table checks were completed, Nepal trend queries were written, and the benchmark aggregate codes were identified as `SAS` for South Asia, `LMC` for Lower middle income, and `WLD` for world. The next step is to continue benchmark comparisons and subgroup gap analysis.

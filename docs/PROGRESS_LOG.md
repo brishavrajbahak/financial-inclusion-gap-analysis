@@ -187,3 +187,36 @@ Document the final cleaning rules, create the analysis-ready dataset, and valida
 Begin SQL analysis using the processed dataset and validate the main financial-inclusion comparisons before dashboard development.
 
 ---
+
+## Day 6 - SQL Setup and Nepal Trend Analysis
+
+**Date:** June 29, 2026
+
+### Work Completed
+
+- Created `03_sql_analysis.ipynb`.
+- Loaded `findex_analysis_ready.csv` into a local SQLite database.
+- Created the `findex_clean` SQL table for reproducible query-based analysis.
+- Ran initial SQL validation queries for total rows, entity-type distribution, survey-year coverage, and distinct country-code coverage.
+- Queried Nepal national overall rows using `country_code = 'NPL'`, `entity_type = 'Country'`, `"group" = 'all'`, and `"group2" = 'all'`.
+- Built initial Nepal trend queries for account ownership, digital access, mobile money, and inactive accounts.
+- Identified benchmark aggregate codes for future comparison: `SAS`, `LMC`, and `WLD`.
+
+### Concepts Learned
+
+- SQLite provides a lightweight way to practice SQL locally without needing a separate database server.
+- Aggregate benchmark rows are not identified through Nepal's `region` or `income_group` values alone; they use their own aggregate `country_code` values.
+- SQL filtering must stay explicit to avoid mixing country rows, aggregate rows, and subgroup rows in the same result.
+- Reproducible SQL analysis starts with table validation before interpretation.
+
+### Decisions Made
+
+- Use SQLite as the SQL engine for the project.
+- Keep benchmark comparisons based on aggregate `country_code` values such as `SAS`, `LMC`, and `WLD`.
+- Restrict Nepal trend analysis to the national overall view before moving into subgroup analysis.
+
+### Next Step
+
+Continue the SQL notebook with benchmark comparisons for Nepal versus South Asia, Lower middle income, and world, then move into subgroup gap analysis by gender, age, and income.
+
+---
