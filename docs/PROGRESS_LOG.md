@@ -220,3 +220,42 @@ Begin SQL analysis using the processed dataset and validate the main financial-i
 Continue the SQL notebook with benchmark comparisons for Nepal versus South Asia, Lower middle income, and world, then move into subgroup gap analysis by gender, age, and income.
 
 ---
+
+## Day 7 - Benchmark, Subgroup, and Power BI Summary Exports
+
+**Date:** July 13, 2026
+
+### Work Completed
+
+- Extended `03_sql_analysis.ipynb` with Nepal benchmark comparisons against:
+  - South Asia (`SAS`)
+  - Lower middle income (`LMC`)
+  - world (`WLD`)
+- Added subgroup account-ownership analysis for Nepal by gender, age, and income group.
+- Added 2024 digital-access subgroup analysis for Nepal.
+- Wrote interpretation notes for subgroup account-ownership results and 2024 digital-access results.
+- Created compact Power BI-ready summary tables from SQL outputs.
+- Exported the summary tables to `data/processed/`:
+  - `nepal_benchmark_summary.csv`
+  - `nepal_account_subgroup_summary.csv`
+  - `nepal_digital_access_2024_summary.csv`
+
+### Key Analytical Findings
+
+- Nepal remains below South Asia, Lower middle income, and world benchmarks on account ownership across the comparison years.
+- The gender gap in account ownership narrows sharply and is nearly closed by 2024.
+- The age gap becomes the largest account-ownership gap by 2024.
+- The income gap remains meaningful, although it improves over time.
+- In 2024 digital access, women and poorer groups lag clearly behind men and richer groups.
+
+### Decisions Made
+
+- Use account ownership as the main long-term benchmark and subgroup trend metric.
+- Treat digital access as a 2024-focused comparison metric because earlier-year coverage is limited.
+- Build the Power BI dashboard from the exported summary tables instead of repeating SQL logic inside Power BI.
+
+### Next Step
+
+Build the Power BI pages using the exported summary tables, capture dashboard screenshots, and document the final portfolio findings.
+
+---
