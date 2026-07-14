@@ -259,3 +259,57 @@ Continue the SQL notebook with benchmark comparisons for Nepal versus South Asia
 Build the Power BI pages using the exported summary tables, capture dashboard screenshots, and document the final portfolio findings.
 
 ---
+
+## Day 8 - Power BI Dashboard Build and Screenshot Capture
+
+**Date:** July 14, 2026
+
+### Work Completed
+
+- Built the `Executive Overview` Power BI page with:
+  - four KPI cards for Nepal and South Asia 2024 values
+  - an account-ownership benchmark trend chart
+  - a 2024 digital-access benchmark comparison chart
+- Built the `Nepal Account Gaps` page showing account-ownership subgroup trends for:
+  - gender
+  - age
+  - income
+- Built the `2024 Digital Access` page showing Nepal's 2024 digital-access gaps for:
+  - gender
+  - age
+  - income
+- Saved the Power BI report file to `powerbi/financial_inclusion_gap_analysis.pbix`.
+- Captured dashboard screenshots and stored them under `reports/screenshots/`.
+
+### Dashboard Structure
+
+- `Executive Overview`
+- `Nepal Account Gaps`
+- `2024 Digital Access`
+
+### Key Dashboard Takeaways
+
+- Nepal remains below South Asia, Lower middle income, and world benchmarks in account ownership.
+- The gender gap in account ownership narrows strongly and is almost closed by 2024.
+- The age gap becomes the largest account-ownership gap by 2024.
+- In 2024 digital access, women, poorer groups, and older adults lag behind their comparison groups.
+
+### Decisions Made
+
+- Use benchmark summary tables rather than the full dataset directly inside Power BI.
+- Present digital-access comparisons as a 2024-focused page because earlier coverage is limited.
+- Keep the dashboard limited to three clear pages instead of expanding the report too early.
+
+### Next Step
+
+Document the final findings in the project README and prepare the final GitHub handoff.
+
+---
+
+## Final Project Status
+
+- Final findings have been documented in the project README.
+- SQL analysis, Power BI pages, screenshots, and documentation are complete.
+- The remaining operational step is to commit and push the updated documentation and screenshot files to GitHub.
+
+---

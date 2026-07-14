@@ -66,20 +66,42 @@ financial-inclusion-gap-analysis/
 - [x] Data dictionary reviewed
 - [x] Key indicators selected
 - [x] Data cleaned and validated
-- [ ] SQL analysis completed
-- [ ] Power BI dashboard completed
-- [ ] Final findings documented
+- [x] SQL analysis completed
+- [x] Power BI dashboard completed
+- [x] Final findings documented
 
 ## Current Progress
 
-Dataset understanding, indicator selection, cleaning, and SQL analysis are substantially complete. The analysis-ready dataset contains 8,577 rows and 18 columns covering account ownership, financial institution access, mobile money, digital payments, and inactive accounts.
+Dataset understanding, indicator selection, cleaning, SQL analysis, and dashboard building are complete. The analysis-ready dataset contains 8,577 rows and 18 columns covering account ownership, financial institution access, mobile money, digital payments, and inactive accounts.
 
 Country observations are separated from regional, income-group, and global aggregates. Missing indicators remain null because availability differs by survey year and population segment.
 
-The SQL phase in `03_sql_analysis.ipynb` now includes Nepal trend analysis, benchmark comparisons against `SAS`, `LMC`, and `WLD`, subgroup account-ownership analysis, and 2024 digital-access subgroup analysis. Power BI-ready summary exports have also been created:
+The SQL phase in `03_sql_analysis.ipynb` includes Nepal trend analysis, benchmark comparisons against `SAS`, `LMC`, and `WLD`, subgroup account-ownership analysis, and 2024 digital-access subgroup analysis. Power BI-ready summary exports have also been created:
 
 - `nepal_benchmark_summary.csv`
 - `nepal_account_subgroup_summary.csv`
 - `nepal_digital_access_2024_summary.csv`
 
-The next step is to build the Power BI dashboard pages from these summary tables and document the final findings.
+The Power BI file now contains three main report pages:
+
+- `Executive Overview`
+- `Nepal Account Gaps`
+- `2024 Digital Access`
+
+Dashboard screenshots have been captured in `reports/screenshots/`. The project is now in its final handoff state.
+
+## Final Findings
+
+- Nepal remains below South Asia, Lower middle income, and world benchmarks in account ownership across the comparison years used in the project.
+- Nepal's gender gap in account ownership narrows strongly over time and is nearly closed by 2024.
+- Nepal's age gap becomes the largest account-ownership gap by 2024, showing that younger adults lag substantially behind older adults.
+- Nepal's income gap improves over time, but richer groups still maintain higher account ownership than poorer groups.
+- In 2024 digital access, women, poorer groups, and older adults lag behind their comparison groups, indicating that digital inclusion remains more uneven than basic account ownership.
+
+## Dashboard Outputs
+
+- `Executive Overview`
+- `Nepal Account Gaps`
+- `2024 Digital Access`
+
+Dashboard screenshots are stored in `reports/screenshots/`, and the Power BI file is stored locally in `powerbi/financial_inclusion_gap_analysis.pbix`.
